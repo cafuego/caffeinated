@@ -1,0 +1,18 @@
+/**
+ * Configurable settings for the caffeinated theme.
+ */
+
+/**
+ * Colours.
+ */
+$text: #000;
+$lite: #999;
+$link: #0678BE;
+$link-hover: ($link - #FF00FF);
+$link-active: ($link + #FFFF00);
+
+/**
+ * Fonts.
+ */
+$header: Charcoal, Helvetica, sans-serif;
+$body: Garamond, Georgia, serif;

@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Cafuego';
+  src: url('../font/Cafuego.eot'); /* For IE */
+  src: local('Cafuego'),
+  url('../font/Cafuego.ttf') format('truetype');
+}

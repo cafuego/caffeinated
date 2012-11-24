@@ -1,0 +1,164 @@
+/**
+ * SCSS overrides for bootstrap.
+ */
+
+@import "config.scss";
+
+/* Text fonts */
+body {
+  font-family: $body;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  color: $text;
+}
+
+/* Header fonts. */
+@for $level from 1 through 6 {
+  h#{$level} {
+    font-family: $header;
+  }
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 0.8em;
+  color: $lite;
+}
+
+h5 {
+  font-size: 0.6em;
+  color: $lite;
+}
+
+h6 {
+  font-size: 0.5em;
+  color: $lite;
+}
+
+.navbar-inner {
+  background-image: url('../images/background.png');
+  background-position: center -20px;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  .brand,
+  .nav > li > a,
+  .nav > li > a:hover,
+  .nav > li > a:focus,
+  .nav > .active > a,
+  .nav > .active > a:hover,
+  .nav > .active > a:focus {
+    background: none;
+    color: whiteSmoke;
+    text-shadow: 2px 2px 2px black;
+    font-family: $header;
+  }
+  .nav .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+
+  .nav-collapse {
+    font-family: $header;
+  }
+}
+
+/**
+ * Colors.
+ */
+a {
+  color: $link;
+  &:hover {
+    color: $link-hover;
+  }
+  &:active {
+    color: $link-active;
+  }
+}
+
+/**
+ * Spacing and positioning.
+ */
+header {
+  margin-bottom: 1em;
+
+  h2 {
+    line-height: 1em;
+    margin-bottom: 0.3em;
+  }
+}
+
+#main-menu {
+  float: right;
+}
+
+/* Mugshots. */
+.submitted {
+  line-height: 1em;
+
+  .tags {
+    display: block;
+  }
+
+  .user-picture {
+    float: left;
+    margin-right: 0.5em;
+  }
+}
+
+/* Links. */
+ul.inline li {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+div.field-type-taxonomy-term-reference {
+  font-weight: normal;
+  font-style: italic;
+
+  .field-items .field-item {
+    display: inline-block;
+    margin-left: 0.5em;
+  }
+}
+
+
+/* Re-style <code> content */
+code {
+  display: block;
+  margin-left: 1.5em;
+  font-family: Courier, "Courier New", monospace;
+}
+
+sub, sup {
+  line-height: 0;
+  font-size: x-small;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+.indented {
+  margin-left: 2em;
+}
+
+.pagination ul > li.pager-ellipsis {
+  display: none;
+}

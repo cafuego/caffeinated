@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Charcoal';
+  src: url('../font/Charcoal.eot'); /* For IE */
+  src: local('Charcoal'),
+  url('../font/Charcoal.ttf') format('truetype');
+}
