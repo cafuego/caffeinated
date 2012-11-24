@@ -18,7 +18,7 @@ function caffeinated_preprocess_node(&$variables) {
     $tag['#title'] = '&' . $tag['#title'];
     $display_tags[] = render($tag);
   }
-  $variables['tags'] = t('In categories !tags', array('!tags' => implode('&nbsp; ', $display_tags)));
+  $variables['tags'] = count($display_tags) ? t('In categories !tags', array('!tags' => implode('&nbsp; ', $display_tags))) : '';
 
   // Make a prettier "submitted" string.
   $variables['submitted'] = t('Posted by !user on @date.', array(
