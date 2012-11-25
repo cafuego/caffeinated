@@ -101,6 +101,28 @@ header {
   }
 }
 
+article.node-teaser .field-name-field-image {
+  float: right;
+  margin-left: 2em;
+}
+
+/* Float images. */
+.wysiwyg-right img,
+img.wysiwyg-right {
+  float: right;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+.wysiwyg-left img,
+img.wysiwyg-left {
+  float: left;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 2em;
+}
+
 #main-menu {
   float: right;
 }
@@ -162,4 +184,8 @@ sup {
 
 .pagination ul > li.pager-ellipsis {
   display: none;
+}
+
+#block-block-1 {
+  float: right;
 }
