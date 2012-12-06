@@ -23,7 +23,7 @@ function caffeinated_preprocess_node(&$variables) {
   // Make a prettier "submitted" string.
   $variables['submitted'] = t('Posted by !user on @date.', array(
     '@date' => format_date($variables['created'], 'custom', 'l j F Y'),
-    '!user' => theme('username', array('account' => $variables['user'])),
+    '!user' => theme('username', array('account' => user_load($variables['node']->uid))),
   ));
 
   unset($variables['content']['links']['blog']);
