@@ -3,7 +3,7 @@
   <header>
     <?php if ($display_submitted): ?>
       <span class="submitted">
-        <?php print $user_picture; ?>
+        <?php print render($user_picture); ?>
       </span>
     <?php endif; ?>
     <?php print render($title_prefix); ?>
@@ -14,10 +14,10 @@
 
     <?php if ($display_submitted): ?>
       <span class="submitted">
-        <?php print $submitted; ?>
+        <?php print render($submitted); ?>
         <?php if (!$page && $tags): ?>
           <span class="tags">
-            <?php print $tags; ?>
+            <?php print render($tags); ?>
           </span>
         <?php endif; ?>
       </span>

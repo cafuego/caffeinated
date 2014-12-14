@@ -4,11 +4,7 @@
  *
  */
 
-/**
- * Preprocess variables for node.tpl.php
- */
 function caffeinated_preprocess_node(&$variables) {
-
   // Make tags.
   $items = field_get_items('node', $variables['node'], 'taxonomy_vocabulary_1');
   foreach ($items as $item) {
@@ -18,7 +14,12 @@ function caffeinated_preprocess_node(&$variables) {
     $tag['#title'] = '&' . $tag['#title'];
     $display_tags[] = render($tag);
   }
-  $variables['tags'] = count($display_tags) ? t('In categories !tags', array('!tags' => implode('&nbsp; ', $display_tags))) : '';
+  if (!empty($display_tags)) {
+    $variables['tags'] = count($display_tags) ? t('In categories !tags', array('!tags' => implode('&nbsp; ', $display_tags))) : '';
+  }
+  else {
+    $variables['tags'] = '';
+  }
 
   // Make a prettier "submitted" string.
   $variables['submitted'] = t('Posted by !user on @date.', array(
@@ -29,11 +30,13 @@ function caffeinated_preprocess_node(&$variables) {
   unset($variables['content']['links']['blog']);
 }
 
+
 /**
  * Preprocess regions.
- */
+ *
 function caffeinated_preprocess_region(&$variables) {
   if ($variables['region'] == 'sidebar_second') {
     $variables['classes_array'][] = 'well';
   }
 }
+*/

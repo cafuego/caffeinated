@@ -2,7 +2,7 @@
   
   <header>
     <span class="submitted">
-      <?php print $picture; ?>
+      <?php print render($picture); ?>
     </span>
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
@@ -30,7 +30,7 @@
 
   <?php if ($signature): ?>
     <footer class="user-signature clearfix">
-      <?php print $signature; ?>
+      <?php print render($signature); ?>
     </footer>
   <?php endif; ?>
 

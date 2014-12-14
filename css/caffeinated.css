@@ -1,0 +1,219 @@
+/**
+ * SCSS overrides for bootstrap.
+ */
+/**
+ * Configurable settings for the caffeinated theme.
+ */
+/**
+ * Colours.
+ */
+/**
+ * Fonts.
+ */
+/* Text fonts */
+body {
+  font-family: Garamond, Georgia, serif;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  color: black; }
+
+/* Header fonts. */
+h1 {
+  font-family: Charcoal, Helvetica, sans-serif; }
+
+h2 {
+  font-family: Charcoal, Helvetica, sans-serif; }
+
+h3 {
+  font-family: Charcoal, Helvetica, sans-serif; }
+
+h4 {
+  font-family: Charcoal, Helvetica, sans-serif; }
+
+h5 {
+  font-family: Charcoal, Helvetica, sans-serif; }
+
+h6 {
+  font-family: Charcoal, Helvetica, sans-serif; }
+
+h1 {
+  font-size: 1.9em; }
+
+h2 {
+  font-size: 1.6em; }
+
+h3 {
+  font-size: 1.4em;
+  clear: both; }
+
+h4 {
+  font-size: 1.1em;
+  color: #999999;
+  clear: both; }
+
+h5 {
+  font-size: 0.6em;
+  color: #999999;
+  clear: both; }
+
+h6 {
+  font-size: 0.5em;
+  color: #999999;
+  clear: both; }
+
+#navbar {
+  background: #333;
+  background-image: url("../images/background.png");
+  background-position: center top;
+  background-repeat: no-repeat; }
+
+.navbar .brand,
+.navbar .nav > li > a,
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus,
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  background: none;
+  color: whiteSmoke;
+  text-shadow: 2px 2px 2px black;
+  font-family: Charcoal, Helvetica, sans-serif; }
+.navbar .nav .caret {
+  border-top-color: white;
+  border-bottom-color: white; }
+.navbar .nav-collapse {
+  font-family: Charcoal, Helvetica, sans-serif; }
+
+/**
+ * Colors.
+ */
+a {
+  color: #0678be; }
+  a:hover {
+    color: #007800; }
+  a:active {
+    color: #ffffbe; }
+
+/**
+ * Spacing and positioning.
+ */
+header {
+  margin-bottom: 1em; }
+  header h2 {
+    line-height: 1em;
+    margin-bottom: 0.3em; }
+
+.node-teaser .field-name-field-image {
+  float: right;
+  margin-left: 2em; }
+
+/* Float images. */
+.wysiwyg-right img,
+img.wysiwyg-right {
+  float: right;
+  clear: right;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 2em; }
+
+.wysiwyg-left img,
+img.wysiwyg-left {
+  float: left;
+  clear: left;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 2em; }
+
+.wysiwyg-small,
+p.wysiwyg-small {
+  font-size: 85%; }
+
+.wysiwyg-tiny,
+p.wysiwyg-tiny {
+  font-size: 70%; }
+
+sup .wysiwyg-small,
+sup .wysiwyg-tiny {
+  top: 0; }
+
+sub .wysiwyg-small,
+sub .wysiwyg-tiny {
+  bottom: 0.5em; }
+
+#main-menu {
+  float: right; }
+
+/* Mugshots. */
+.submitted {
+  line-height: 1em; }
+  .submitted .tags {
+    display: block; }
+  .submitted .user-picture {
+    float: left;
+    margin-right: 0.5em; }
+
+/* Links. */
+ul.inline li {
+  display: inline-block;
+  margin-left: 2em; }
+
+div.field-type-taxonomy-term-reference {
+  font-weight: normal;
+  font-style: italic; }
+  div.field-type-taxonomy-term-reference .field-items .field-item {
+    display: inline-block;
+    margin-left: 0.5em; }
+
+/* Re-style <code> content */
+code {
+  display: block;
+  margin-left: 1.5em;
+  font-family: Courier, "Courier New", monospace; }
+
+sub, sup {
+  line-height: 0;
+  font-size: x-small; }
+
+sub {
+  vertical-align: text-bottom; }
+
+sup {
+  vertical-align: text-top; }
+
+.indented {
+  margin-left: 2em; }
+
+.pagination ul > li.pager-ellipsis {
+  display: none; }
+
+#block-block-1 {
+  float: right; }
+
+/* Google Adsense block. */
+#block-adsense-managed-1 {
+  margin-top: 2em; }
+  #block-adsense-managed-1 h2 {
+    text-align: center;
+    font-size: 0.5em;
+    font-weight: normal;
+    margin: auto;
+    margin-bottom: -1em;
+    color: #999; }
+
+/* Hotness */
+.view-id-radioactivity > .view-content > div {
+  margin-bottom: 48px; }
+
+.view-id-radioactivity .views-field-field-image {
+  float: right; }
+
+/* Admin on top. */
+#admin-menu {
+  z-index: 9999; }
+
+/* BWL */
+.block-bom-weather-lite .bwl-icon {
+  float: left; }
+.block-bom-weather-lite .bwl-date {
+  font-size: xx-small;
+  color: #666; }

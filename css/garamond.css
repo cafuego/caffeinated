@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Garamond';
+  src: url('../font/Garamond.eot'); /* For IE */
+  src: local('Garamond'),
+  url('../font/Garamond.ttf') format('truetype');
+}

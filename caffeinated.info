@@ -1,7 +1,7 @@
 name = Caffeinated
 description = Subtheme based on Twitter's bootstrap framework.
-
 core = 7.x
+version = 7.x-1.0
 
 base theme = bootstrap
 
@@ -11,4 +11,4 @@ stylesheets[all][] = css/charcoal.css
 stylesheets[all][] = css/chicago.css
 
 ; Stylish.
-stylesheets[all][] = scss/caffeinated.scss
+stylesheets[all][] = css/caffeinated.css
