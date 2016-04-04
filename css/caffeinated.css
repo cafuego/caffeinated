@@ -201,7 +201,7 @@ sup {
     color: #999; }
 
 /* Hotness */
-.view-id-radioactivity > .view-content > div {
+.view-id-radioactivity.view-display-id-page_1 > .view-content > div {
   margin-bottom: 48px; }
 
 .view-id-radioactivity .views-field-field-image {
